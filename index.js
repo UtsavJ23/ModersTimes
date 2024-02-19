@@ -43,7 +43,7 @@ for(let j=0; j<5; j++){
         d4.appendChild(span);
     }
 }
-setTimeout(function updateClock(){
+function updateClock(){
     const date = new Date();
     const hours = date.getHours();
     const minutes = date.getMinutes();
@@ -81,8 +81,8 @@ setTimeout(function updateClock(){
         secondCell.className = secondCell.classList.contains("bg-gray-200")?
         "text-lg m-0 p-0 text-cyan-500 bg-gray-200 bg-opacity-20":"text-lg m-0 p-0 text-cyan-500"; 
     }
-    setTimeout(updateClock, 1000);
-}, 1000);
+}
+setInterval(updateClock,1000);
 
 function updateDigit(element, number) {
     const spans = element.children;
