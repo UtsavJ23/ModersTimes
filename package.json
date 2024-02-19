@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "vite",
-    "build": "postcss style.css -o public.css"
+    "building": "postcss style.css -o public.css",
+    "build":"vite build"
   },
   "author": "",
   "license": "ISC",
