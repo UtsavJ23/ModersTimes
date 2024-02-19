@@ -28,7 +28,6 @@ d1= document.getElementById("digit1");
 d2= document.getElementById("digit2");
 d3= document.getElementById("digit3");
 d4= document.getElementById("digit4");
-console.log(digits)
 for(let j=0; j<5; j++){
     for(let i=0; i<12; i++){
         span = document.createElement("span");
@@ -44,13 +43,12 @@ for(let j=0; j<5; j++){
         d4.appendChild(span);
     }
 }
-console.log("Beginning");
 setTimeout(function updateClock(){
     const date = new Date();
     const hours = date.getHours();
     const minutes = date.getMinutes();
     const seconds = date.getSeconds();
-    console.log(`${hours}:${minutes}:${seconds}`);
+    // console.log(`${hours}:${minutes}:${seconds}`);
     let h1 = numbers[Math.floor(hours/10)];
     let h2 = numbers[Math.floor(hours%10)];
     let m1 = numbers[Math.floor(minutes/10)];;
